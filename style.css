@@ -29,10 +29,12 @@ body {
   display: grid;
   margin: auto;
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
   grid-template-areas: 
     "image"
     "image"
+    "image"
+    "title"
     "text";
   background-color: var(--White);
   border-radius: 20px;
@@ -40,27 +42,25 @@ body {
 
 .card-qr_image {
   grid-area: image;
-}
-
-.card-qr_image > img{
   width: 100%;
   border-radius: 10px;
+  margin: auto;
 }
 
-.card-description {
-  grid-area: text;
+.card-title {
+  grid-area: title;
   margin: auto;
   text-align: center;
-}
-
-.card-description-title {
   font-family: 'Outfit', sans-serif;
   font-size: 1.3em;
   color: var(--Dark-blue);
   margin-bottom: 10px;
 }
 
-.card-description-description {
+.card-description {
+  grid-area: text;
+  margin: auto;
+  text-align: center;
   font-family: 'Outfit', sans-serif;
   font-size: 1em;
   color: var(--Grayish-blue);
